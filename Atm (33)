@@ -1,0 +1,145 @@
+var ATM 
+var  balance = 10000;
+var 	passuc = "1234";
+var accname = "Ahmad Rufai"
+
+
+	alert("Welcome to MyBank: " + accname);
+pass =prompt("Please Enter your password")
+ if (pass != passuc){
+ 	alert("Wrong Password Try again")
+} else{
+	alert("Welcome "+ accname );
+
+
+var f = prompt("please Choose Your Transaction\n"+ "[1] Check Balance \n" + "[2] Withdraw \n" + "[3] Deposit\n" + "[4] Others\n" )
+
+if (f == 1){
+	alert("Your Balance is "+ balance, '*ATM*')
+}
+
+if (f == 2){
+	wid = prompt("Please Enter Amount to Withdraw")
+	if (wid>balance){
+  b = 	alert("Insufficient Balance ")
+	} 
+	else {
+			b = (balance - wid) 
+			alert("Your Remaining Balance is "+ b )
+		} 
+} 
+
+ if (f == 3){
+ dep=prompt("Please Enter Amount to Deposited") 
+   dep= Number(dep) + Number(balance)
+    alert("Your current is " + dep)
+ }
+
+} 
+if (f == 4){
+ othr=prompt("please Choose Your Transaction\n"+ "[1] Change Your Pin \n" + "[2] Transfer \n" + "[3] Bills Payment\n" + "[4] Airtime \n" ) 
+
+if (othr == 1){
+	var pn = prompt("Enter Your old pin")
+	if (pn == passuc){
+		var npn = prompt("Enter Your New pin")
+		alert("You have successfuly change your pin")
+	} else{
+		alert("The pin you enter is invalid Try again")
+	}
+	
+}
+if (othr==2){
+	var trns = prompt("Choose Type of Bank\n"+"[1]Unity\n"+"[2]First bank\n"+"[3]Uba\n"+"[4]AcessBank\n"+"[5]Jaiz\n"+"[6]GtBank\n"+"[7]Wema\n"+"[8]Zenith Bank\n"+"[9]Others\n");
+	}
+
+if(trns == 1){
+	un = prompt("Enter the Unity Account Number")
+	amt = prompt("Enter Amount to Transfer")
+	
+	if (amt > balance){
+		alert("Insufficient Balance")
+	} else
+	 trn = (balance - amt)
+	alert("You have succesfuly transfer " +amt 
+		+" \n" +" ")
+		alert("Your new balance is:  " + trn)
+}
+
+if(trns == 2){
+	fst = prompt("Enter the First Bank Account Number")
+	amt = prompt("Enter Amount to Transfer")
+	
+	if (amt > balance){
+		alert("Insufficient Balance")
+	} else
+	 trn = (balance - amt)
+	alert("You have succesfuly transfer " +amt 
+		+" \n" +" ")
+		alert("Your new balance is:  " + trn)
+}
+
+if( othr == 4){
+	var art = 	prompt("which type of Network\n"+"[1] Mtn\n"+"[2] Glo\n"+"[3] Airtel\n"+"[4] Etisala\n");
+	
+	
+  if(art == 1) {
+  	nub = prompt("Enter Number To Recharge")
+	var mtn= prompt("Select amount to recharge "+"\n"+"1. N100"+"\n 2. N300" +"\n 3. N500")
+	
+if (mtn == 1){ 
+	alert("Your succesfully recharge MTN N100 for " + nub + " \n"+ "Thanks!") 
+	}
+	
+	if (mtn == 2){ 
+	alert("Your succesfully recharge MTN N300 for " + nub + " \n"+ "Thanks!") 
+	}
+	
+	if (mtn == 3){ 
+	alert("Your succesfully recharge MTN N500 for " + nub + " \n"+ "Thanks!") 
+	}
+	
+}
+  
+  if(art == 2) {
+  	nub = prompt("Enter Number To Recharge")
+	var glo= prompt("Select amount to recharge "+"\n"+"1. N100"+"\n 2. N300" +"\n 3. N500")
+  
+  
+  if (glo == 1){ 
+	alert("Your succesfully recharge GLO N100 for " + nub + " \n"+ "Thanks!") 
+	}
+	
+	if (glo == 2){ 
+	alert("Your succesfully recharge GLO N300 for " + nub + " \n"+ "Thanks!") 
+	}
+	
+	if (glo == 3){ 
+	alert("Your succesfully recharge GLO N500 for " + nub + " \n"+ "Thanks!") 
+	}
+  
+  }
+  
+  if(art == 3) {
+  	nub = prompt("Enter Number To Recharge")
+	var airtel= prompt("Select amount to recharge "+"\n"+"1. N100"+"\n 2. N300" +"\n 3. N500")
+  
+  if (airtel == 1){ 
+	alert("Your succesfully recharge Airtel N100 for " + nub + " \n"+ "Thanks!") 
+	}
+	
+	if (airtel == 2){ 
+	alert("Your succesfully recharge  Airtel N300 for " + nub + " \n"+ "Thanks!") 
+	}
+	
+	if (airtel == 3){ 
+	alert("Your succesfully recharge  Airtel N500 for " + nub + " \n"+ "Thanks!") 
+	}
+  
+  }
+  
+  
+  
+}
+}
+
